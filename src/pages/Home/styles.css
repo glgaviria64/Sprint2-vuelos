@@ -1,0 +1,34 @@
+.vuelos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  min-height: 50vh;
+}
+
+.vuelo-form {
+  text-align: center;
+  background-color: #e9e9e9;
+  max-width: 655px;
+  box-shadow: 1px 1px 4px #909090;
+}
+
+@media screen and (min-width: 1200px) {
+  .vuelos {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vuelo-form {
+    flex-basis: 50%;
+    position: relative;
+    z-index: 100;
+    margin-right: -100px;
+  }
+
+  .vuelo-img {
+    flex-basis: 50%;
+  }
+}
